@@ -58,7 +58,8 @@ class Resource(models.Model):
     )
 
     resource_manager = models.ForeignKey(
-        ResourceManger, on_delete=models.CASCADE
+        ResourceManger, on_delete=models.CASCADE,
+        null=True, blank=True
     )
 
     class Meta:
